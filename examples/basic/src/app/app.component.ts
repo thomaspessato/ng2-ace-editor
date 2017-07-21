@@ -19,7 +19,7 @@ export class AppComponent {
   }
 
   ngAfterViewInit() {
-    var Range = ace.require('ace/range').Range
+    var Range = ace.acequire('ace/range').Range
 
     this.highlight.getEditor().session.addMarker(
       new Range(0, 0, 2, 1), "myMarker", "fullLine"
